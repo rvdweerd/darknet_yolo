@@ -1,0 +1,7 @@
+back##../darknet/darknet detector train obj.data cfg/yolov3-tiny_3l.cfg ../pretrained/yolov3-tiny.weights -clear 1 -dont_show -mjpeg_port 8090 -map
+
+##../darknet/darknet detector train obj.data cfg/yolov3-tiny_3l.cfg ../pretrained/yolov3-tiny_3l_best_firstrun.weights -clear 1 -dont_show -mjpeg_port 8090 -map
+
+## test
+#../darknet/darknet detector map ./obj.data ./cfg/yolov3-tiny_3l.cfg ../pretrained/yolov3-tiny_3l_best_firstrun.weights
+../darknet/darknet detector map ./obj.data ./cfg/yolov3-tiny_3l.cfg ../pretrained/yolov3-tiny.weights
