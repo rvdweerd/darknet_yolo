@@ -1,0 +1,20 @@
+1st run:
+lr=0.001
+bsize=64
+steps=120,000
+Best model:
+ball: ap=92.68% (TP=144, FP=7)
+robo: ap=86.13% (TP=89, FP=8)
+conf_thres=0.25: P=0.94,R=0.79,F1=0.86,TP=233,FP=15,FN=61,avg IoU=73.43%
+for IoU threshold=0.50: 
+map@0.50=0.894
+
+2nd run:
+lr=0.001
+bsize=64
+totalsteps=170,000
+continue from last model saved.
+New best model:
+ball: ap=94.97 (148/8)
+robo: ap=90.26 (108/8)
+map@0.5 = 0.926
